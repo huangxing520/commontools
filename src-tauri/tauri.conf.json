@@ -12,7 +12,15 @@
   },
   "tauri": {
     "allowlist": {
-      "all": true
+      "all": true,
+      "shell": {
+        "scope": [{
+          "name": "node",
+          "cmd": "node",
+          "args": ["-v"]
+        }
+        ]
+      }
     },
     "bundle": {
       "active": true,
